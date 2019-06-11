@@ -11,7 +11,7 @@
 #define size 10;
 
 bool bIsRunning = true;
-
+int Clamp(int current, int Min, int Max);
 //int main()
 //{
 	/*int a = 0;
@@ -101,18 +101,16 @@ int Input()
 	return keyCode;
 }
 
+
 void Tick(int keyCode)
 {
 	//map check
 	int mapCheck = map[currentY][currentX];
 
-
-	if (currentX < 0)currentX = 0;
+	/*if (currentX < 0)currentX = 0;
 	else if (currentX > 10) currentX = 10;
 	else if (currentY < 0)currentY = 0;
-	else if (currentY > 10) currentY = 10;
-
-	if (currentX < 0 || currentX > 10 || currentY < 0 || currentY > 10)return;
+	else if (currentY > 10) currentY = 10;*/
 
 	switch (keyCode)
 	{
@@ -133,7 +131,22 @@ void Tick(int keyCode)
 		bIsRunning = false;
 		break;
 	}
+
+	currentX = Clamp(currentX, 1, 8);
+	currentY = Clamp(currentY, 1, 8);
 }
+
+int Clamp(int current, int Min, int Max)
+{
+	if (current < Min)
+		return Min;
+
+	if (current > Max)
+		return Max;
+
+	return current;
+}
+
 
 void Draw()
 {
@@ -154,7 +167,6 @@ void Draw()
 		printf("\n");
 	}
 }
-
 
 int main()
 {
