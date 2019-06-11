@@ -101,16 +101,18 @@ int Input()
 	return keyCode;
 }
 
-void Tick(int keyCode) 
+void Tick(int keyCode)
 {
 	//map check
 	int mapCheck = map[currentY][currentX];
 
-	
+
 	if (currentX < 0)currentX = 0;
 	else if (currentX > 10) currentX = 10;
 	else if (currentY < 0)currentY = 0;
 	else if (currentY > 10) currentY = 10;
+
+	if (currentX < 0 || currentX > 10 || currentY < 0 || currentY > 10)return;
 
 	switch (keyCode)
 	{
