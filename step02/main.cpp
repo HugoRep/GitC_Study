@@ -5,18 +5,17 @@
 #include "Utill.h"
 
 
-#define UP 75
-#define DOWN 77
-#define LEFT 72
-#define RIGHT 80
-
-
 int main()
 {
 	Engine* engine = new Engine();
+	Player* player = new Player();
+	Map* map = new Map();
+
+	engine->init(player, map);
+	//engine->Setting(new Setting(a, b, c, d));
 	engine->Run();
-	
 
 	delete engine;
 	return 0;
 }
+	

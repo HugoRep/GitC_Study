@@ -8,6 +8,7 @@ public:
 	int X;
 	int Y;
 
-	void Move();
+	void Move(int keyCode);
+	void Tick(int keyCode);
+	void Draw();
 };
-

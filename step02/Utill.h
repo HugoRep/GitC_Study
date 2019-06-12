@@ -7,4 +7,3 @@ public:
 
 	static int Clamp(int current, int Min, int Max);
 };
-

@@ -147,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine.h" />
+    <ClInclude Include="KeyBoardConst.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Utill.h" />
