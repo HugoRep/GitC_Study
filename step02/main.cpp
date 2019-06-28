@@ -1,9 +1,7 @@
-
 #include "Engine.h"
 #include "Map.h"
 #include "Player.h"
 #include "Utill.h"
-
 
 int main()
 {
@@ -18,4 +16,3 @@ int main()
 	delete engine;
 	return 0;
 }
-	

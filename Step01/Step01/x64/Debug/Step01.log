@@ -1,0 +1,13 @@
+﻿  Character.cpp
+  Engine.cpp
+c:\junios\step01\step01\engine.cpp(78): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
+  Goblin.cpp
+  main.cpp
+  Map.cpp
+  Monster.cpp
+  Player.cpp
+  Slime.cpp
+  Wildboar.cpp
+  코드를 생성하고 있습니다...
+  Step01.vcxproj -> C:\junios\Step01\x64\Debug\Step01.exe
